@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send OTP</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.otp-form-container {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-header h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.form-header h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #1ed760;
+    color: #000;
+    text-align: center;
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button a:hover {
+    opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+    <div class="otp-form-container">
+        <div class="form-header">
+            <h1>CiniTune</h1>
+            <h2>Send OTP</h2>
+        </div>
+        <form action="send-otp">
+            <div class="input-box">
+                <input type="text" placeholder="Mobile or Email" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="send-otp-btn">
+                    <a href="./4-Otp-Verification.html">Send OTP</a>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

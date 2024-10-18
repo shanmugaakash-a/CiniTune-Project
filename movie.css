@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+.movie-details {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 36px;
+    color: #1ed760;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+p strong {
+    color: #0fc248;
+}
+
+a {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1ed760;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    color: #1ed760;
+    margin: 30px 0px;
+}
+
+iframe {
+    border-radius: 10px;
+    height: 315px;
+    width: 560px;
+}
+
+button {
+    background-color: #1ed760;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #18b350;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-content {
+    display: flex;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    max-width: 600px;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    iframe {
+        height: 200px;
+        width: 100%;
+    }
+
+    .movie-details, .profile-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    iframe {
+        height: 180px;
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}

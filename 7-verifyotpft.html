@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - Forgot Password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Dark background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #1ed760; /* CiniTune green */
+        }
+
+        input[type="text"] {
+            padding: 15px;
+            width: 300px;
+            border-radius: 30px;
+            border: 1px solid #444;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        input[type="text"]::placeholder {
+            color: #aaa;
+        }
+
+        button {
+            background-color: #1ed760; /* Green button */
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button a:hover {
+            text-decoration: none;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        h5 a {
+            color: #1ed760;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h5 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>CiniTune</h1>
+    <h1>OTP Verification</h1>
+    <form action="Otp verification">
+        <input type="text" name="Otp-verification" placeholder="Enter your OTP" required><br><br>
+        <button><a href="./8-RESET%20PASSWORD.html">Verify</a></button>
+        <h5>Send OTP Again? <a href="#">Resend OTP</a></h5>
+    </form>
+</body>
+</html>

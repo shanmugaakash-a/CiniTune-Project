@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.profile-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-info {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.profile-info h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1ed760;
+    text-align: center;
+}
+.listeners {
+    color: #888888;
+    margin: 5px 0;
+    text-align: center;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: 30px;
+    padding: 0px 40px;
+}
+.about h1 {
+    font-size: 36px;
+    margin: 5px 0px;
+    color: #1ed760;
+}
+.about p {
+    font-size: 24px;
+    margin: 5px 10px;
+    line-height: 25px;
+}
+.song-list {
+    margin-top: 20px;
+}
+.song-list h2 {
+    font-size: 24px;
+    margin: 10px 0px;
+    color: #1ed760;
+}
+.song-list .music {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 10px;
+}
+.thumbnails {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.music-name {
+    margin-left: 10px;
+    width: 300px;
+}
+.music-name h4 {
+    width: 300px;
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+audio {
+    width: 300px;
+    height: 40px;
+    margin-top: 5px;
+}
+.music-name h4 {
+    width: 60px;
+}
+button {
+    background-color: #1ed760;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+button a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+button i {
+    margin-right: 5px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+img.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.about p {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.movie {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-info {
+        margin-left: 0;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    .about h1 {
+        font-size: 28px;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    .music-name h4 {
+        font-size: 16px;
+    }
+    audio {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .profile-header {
+        flex-direction: column;
+    }
+    .profile-info h1 {
+        font-size: 24px;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .music-name h4 {
+        font-size: 14px;
+    }
+    .movie {
+        flex-direction: column;
+    }
+    .about{
+        margin: 0px;
+        padding: 10px 15px;
+    }
+}

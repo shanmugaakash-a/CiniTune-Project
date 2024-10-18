@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+        
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-form-container {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-header h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .form-header h2 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .input-box label {
+            display: block;
+            text-align: left;
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 35px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .login-btn {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 100%;
+            padding: 12px;
+            background-color: #1ed760;
+            border: none;
+            border-radius: 30px;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #1ed760;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .register-link {
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .register-link p {
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #1ed760;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-form-container">
+        <div class="form-header">
+            <h1>CiniTune</h1>
+            <h2>Login to CiniTune</h2>
+        </div>
+        <form action="login">
+            <div class="input-box">
+                <label for="email">Email or Username</label>
+                <input type="text" id="email" name="Username-or-Email" placeholder="Email or username" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password">
+                    <i class="fa fa-eye"></i>
+                </span>
+            </div>
+            <a href="./10.welcomepage.html" class="login-btn">Log In</a>            
+            <div class="forgot-password">
+                <a href="./6-send-otp-ft.html">Forgot your password?</a>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account? <a href="./2-Signup.html">Sign up for CiniTune</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
